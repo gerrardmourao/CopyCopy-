@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livros - Biblioteca Pessoal</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
+</head>
+<body class="bo-dy theme-light">
+    <header>
+        <nav>
+            <ul>
+                <li><a class="neon-btn" href="/home.html">Home<span></span></a></li>
+                <li><a class="neon-btn" href="https://www.amazon.com.br/Livros">Amazon Livros<span></span></a></li>
+                <li><a class="neon-btn" href="/editoras.html">Editoras<span></span></a></li>
+                <li><a class="neon-btn" href="/livros.html">Livros<span></span></a></li>
+                <li><a class="neon-btn" href="/autores.html">autores<span></span></a></li>
+                <li><button class="neon-btn theme-toggle-btn" id="themeToggleBtn">Alternar Tema<span></span></button></li>
+            </ul>            
+        </nav>
+        <h1>Lista de Livros</h1>
+    </header>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>Título</th>
+                    <th>Autor</th>
+                    <th>Ações</th>
+                    <th>Data de Publicação</th>
+                </tr>
+            </thead>
+            <tbody id="listaLivros"></tbody>
+        </table>
+        <h2>
+            <button class="icon-btn" id="addBookBtn">
+                <i class="fa fa-book" aria-hidden="true"></i> Adicionar livros
+            </button>
+        </h2>
+    </main>
+    <!-- Popup para Adicionar/Atualizar Livro -->
+    <div id="bookPopup" class="hidden">
+        <form id="bookForm">
+            <h3>Adicionar/Atualizar Livro</h3>
+            <input type="hidden" id="id_livro">
+            <input type="text" id="Ação" placeholder="Titulo" required>
+            <input type="text" id="titulo" placeholder="Autor" required>
+            <input type="text" id="autor" placeholder="Ações" required>
+            <input type="date" id="dataPublicação" placeholder="Data de Publicação" required>
+            <button type="submit" class="action-btn">Salvar</button>
+            <button type="button" id="closePopupBtn" class="action-btn">Fechar</button>
+        </form>
+    </div>
+    <script src="/js/app.js"></script>
+    <script src="/js/livros.js"></script>
+</body>
+</html>

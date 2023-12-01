@@ -1,0 +1,405 @@
+/* Reset básico */
+body, h1, h2, h3, ul, li, a {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+/* Estilização do header */
+header {
+    background-color: #0c0625;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+/* Estilização do menu */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    color: #fff; /* Cor do texto */
+    font-size: 18px; /* Tamanho da fonte */
+    margin-right: 10px; /* Espaçamento à direita */
+    padding: 0rem 1rem;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+/* Estilo do conteúdo principal */
+main {
+    padding: 1rem;
+}
+
+/* Estilo para ocultar elementos */
+.hidden {
+    display: none;
+}
+
+/* Estilização do Popup */
+.show {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bookPopup form {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;  /* largura máxima */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#bookPopup h3 {
+    margin-bottom: 1rem;
+}
+
+#bookPopup input[type="text"],
+#bookPopup input[type="date"],
+#bookPopup button {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+}
+
+#bookPopup button[type="submit"] {
+    background: #007BFF;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 18px; /* Tamanho da fonte */
+}
+
+#bookPopup button[type="submit"]:hover {
+    background: #0056b3;
+}
+
+#bookPopup #closePopupBtn {
+    background: #ccc;
+    cursor: pointer;
+}
+
+#bookPopup #closePopupBtn:hover {
+    background: #aaa;
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #007BFF; /* Cor do ícone */
+    font-size: 1.2rem; /* Tamanho do ícone */
+    transition: color 0.3s;
+}
+
+.icon-btn:hover {
+    color: #0056b3; /* Cor do ícone ao passar o mouse */
+}
+
+/* Pode querer estilizar de forma diferente dependendo da ação */
+.icon-btn.delete {
+    color: #dc3545; /* Cor vermelha para a ação de excluir */
+}
+
+.icon-btn.delete:hover {
+    color: #b02130; /* Cor vermelha ao passar o mouse */
+}
+
+main h2, p {
+   text-align: center;
+    font -size: 24px; /* Tamanho da fonte */
+}
+
+body, main {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+main, h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+main, p {
+    font-size: 1.5rem;
+}
+
+body {
+    background-color: lightyellow;
+}
+
+#MB {
+    margin-top: 2.5rem;
+}
+
+#pL3 {
+    margin-top: 17rem;
+}
+
+#pL1 {
+    margin-top: 13.5rem;
+}
+
+/* Estilos para o tema claro */
+body.theme-light {
+    background-color: lightyellow;
+    color: #333;
+}
+
+/* Estilos para o tema escuro */
+body.theme-dark {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+/* Estilização da tabela */
+table {
+    align-items: center;
+    margin: 0 auto; /* Centraliza a tabela horizontalmente */
+}
+
+/* Estilização do cabeçalho da tabela */
+table th {
+    padding: 0.5rem;
+    text-align: center; /* Alinhe o texto no centro */
+}
+
+/* Estilização do botão "Adicionar" */
+.icon-btn.add-book {
+    margin: 30px auto; /* Centraliza o botão horizontalmente e adiciona margem acima e abaixo */
+    display: block; /* Torna o botão um bloco para centralização vertical */
+    text-align: center; /* Alinhar o texto no centro */
+}
+
+h1 {
+    margin-top: 30px; /* Ajuste o valor conforme necessário */
+}
+
+main h2 {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 0.5px;
+}
+
+.theme-toggle-btn {
+    background: transparent; /* Define o fundo como transparente */
+    border: none; /* Remove a borda */
+    cursor: pointer;
+    color: #fff; /* Cor do texto */
+    font-size: 18px; /* Tamanho da fonte */
+    margin-right: 10px; /* Espaçamento à direita */
+    padding: 0rem 1rem;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Adiciona transições suaves para fundo e cor do texto */
+}
+
+.theme-toggle-btn:hover {
+    background-color: #555; /* Define o fundo como cinza ao passar o mouse */
+    color: #fff; /* Define a cor do texto para um tom mais escuro ao passar o mouse */
+}
+
+/* Adicione isso ao seu CSS */
+
+/* Efeito Neon */
+.neon-btn {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: transparent;
+    color: #03e9f4;
+    border: 2px solid #03e9f4;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.neon-btn:hover {
+    color: #050801;
+    background-color: #03e9f4;
+    box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 200px #03e9f4;
+}
+
+.neon-btn:before,
+.neon-btn:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #03e9f4, #03e9f4);
+    top: 0;
+    left: 0;
+    z-index: -1;
+    animation: shine 1.5s linear infinite;
+}
+
+@keyframes shine {
+    0% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: -100% -100%;
+    }
+}
+
+
+.neon-btn {
+    padding: 0.px 010px; /* Ajuste o padding conforme necessário */
+    border-radius: 5px; /* Adicione uma borda mais arredondada */
+}
+
+.neon-btn:hover {
+    box-shadow: 0 0 0.5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 200px #03e9f4, 0 0 20px rgba(0, 0, 0, 0.5);
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+.neon-btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.neon-btn span {
+    position: absolute;
+    display: block;
+    background: radial-gradient(circle, #03e9f4, transparent);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: scale(0);
+    animation: pulse 1.5s infinite;
+}
+
+.neon-btn:hover span {
+    opacity: 1;
+    transform: scale(1);
+}
+
+@keyframes pulse {
+    to {
+        opacity: 0;
+        transform: scale(2);
+    }
+}
+
+
+/* ... Código anterior ... */
+
+/* Efeito Neon com Reflexo, Borda Arredondada e Botões Menores */
+.neon-btn {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px; /* Ajuste o tamanho conforme necessário */
+    font-size: 1rem; /* Ajuste o tamanho da fonte conforme necessário */
+    background-color: transparent;
+    color: #03e9f4;
+    border: 2px solid #03e9f4;
+    overflow: hidden;
+    transition: 0.5s;
+    border-radius: 20px; /* Ajuste o valor conforme necessário para tornar a borda mais arredondada */
+}
+
+.neon-btn:hover {
+    color: #050801;
+    background-color: #03e9f4;
+    box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 200px #03e9f4;
+}
+
+.neon-btn:before,
+.neon-btn:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #03e9f4, #03e9f4);
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 20px; /* Ajuste o valor conforme necessário para tornar a borda mais arredondada */
+    animation: shine 1.5s linear infinite;
+}
+
+@keyframes shine {
+    0% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: -100% -100%;
+    }
+}
+
+.neon-btn {
+    padding: 0.1px 5px; /* Ajuste o padding conforme necessário */
+}
+
+.neon-btn:hover {
+    box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 200px #03e9f4, 0 0 20px rgba(0, 0, 0, 0.5);
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+.neon-btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.neon-btn span {
+    position: absolute;
+    display: block;
+    background: radial-gradient(circle, #03e9f4, transparent);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: scale(0);
+    animation: pulse 1.5s infinite;
+}
+
+.neon-btn:hover span {
+    opacity: 1;
+    transform: scale(1);
+}
+
+@keyframes pulse {
+    to {
+        opacity: 0;
+        transform: scale(2);
+    }
+}
+
+/* Adicione isso ao seu CSS */
+.main {
+    text-align: center;
+    padding: px; /* Adicione o espaçamento desejado */
+}
+
+.welcome-text {
+    max-width: 800px; /* Defina a largura máxima do bloco de texto */
+    margin: 0 auto; /* Centralize horizontalmente */
+}
+
